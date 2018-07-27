@@ -16,7 +16,10 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
             Find.Element(By.Name("installer.current.model.password"))
                 .SendKeys(installerModel.Password);
 
+            //todo after submitting the db etc is created but then a js redirect happens
+            //we need to be able to tap into that to get the backoffice page atm we still have the install page
             return Navigate.To<UmbracoBackOfficeContentPage>(By.CssSelector("input[type='submit']"));
+
         }
     }
 }

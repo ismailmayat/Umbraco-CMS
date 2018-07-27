@@ -54,6 +54,7 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer
 
             backOfficePage.Title.Should().Contain("Content");
 
+
         }
 
     }
