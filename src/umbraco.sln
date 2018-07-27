@@ -91,6 +91,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocTools", "DocTools", "{53
 		ApiDocs\toc.yml = ApiDocs\toc.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Tests.Selenium", "Umbraco.Tests.Selenium\Umbraco.Tests.Selenium.csproj", "{ECA82C38-465E-4DFF-98E5-0A64E27A6C20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{86DEB346-089F-4106-89C8-D852B9CF2A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DEB346-089F-4106-89C8-D852B9CF2A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DEB346-089F-4106-89C8-D852B9CF2A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA82C38-465E-4DFF-98E5-0A64E27A6C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA82C38-465E-4DFF-98E5-0A64E27A6C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA82C38-465E-4DFF-98E5-0A64E27A6C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA82C38-465E-4DFF-98E5-0A64E27A6C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +140,7 @@ Global
 		{5B03EF4E-E0AC-4905-861B-8C3EC1A0D458} = {227C3B55-80E5-4E7E-A802-BE16C5128B9D}
 		{86DEB346-089F-4106-89C8-D852B9CF2A33} = {B5BD12C1-A454-435E-8A46-FF4A364C0382}
 		{53594E5B-64A2-4545-8367-E3627D266AE8} = {FD962632-184C-4005-A5F3-E705D92FC645}
+		{ECA82C38-465E-4DFF-98E5-0A64E27A6C20} = {B5BD12C1-A454-435E-8A46-FF4A364C0382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A0F2E34-D2AF-4DAB-86A0-7D7764B3D0EC}
