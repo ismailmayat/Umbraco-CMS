@@ -13,7 +13,7 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
             Find.Element(By.Name("email"))
                 .SendKeys(installerModel.Email);
 
-            Find.Element(By.Name("password"))
+            Find.Element(By.Name("installer.current.model.password"))
                 .SendKeys(installerModel.Password);
 
             return Navigate.To<UmbracoBackOfficeContentPage>(By.CssSelector("input[type='submit']"));

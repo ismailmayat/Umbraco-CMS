@@ -79,7 +79,6 @@
     <Compile Include="PageTests\Installer\InstallerTests.cs" />
     <Compile Include="PageTests\Installer\Models\InstallPage.cs" />
     <Compile Include="PageTests\Installer\Models\UmbracoBackOfficeContentPage.cs" />
-    <Compile Include="PageTests\SeleniumTestsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
