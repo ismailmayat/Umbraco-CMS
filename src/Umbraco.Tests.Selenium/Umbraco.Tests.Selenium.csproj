@@ -71,8 +71,10 @@
     <Compile Include="Helper\Config.cs" />
     <Compile Include="Helper\Constants.cs" />
     <Compile Include="Helper\IISExpressWebServer.cs" />
+    <Compile Include="Helper\ObjectMother.cs" />
     <Compile Include="Host.cs" />
     <Compile Include="IConfig.cs" />
+    <Compile Include="PageTests\Installer\InstallerModel.cs" />
     <Compile Include="PageTests\Installer\InstallerTests.cs" />
     <Compile Include="PageTests\Installer\InstallPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

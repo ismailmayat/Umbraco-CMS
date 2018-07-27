@@ -40,5 +40,14 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer
 
         }
 
+        [Test]
+        public void Can_Install_New_Blank_Site()
+        {
+            var installPage = Host.NavigateToInitialPage<InstallPage>();
+
+            installPage.InstallUmbraco(ObjectMother.CreateInstallerModel());
+
+        }
+
     }
 }
