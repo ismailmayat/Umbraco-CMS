@@ -11,7 +11,7 @@ namespace Umbraco.Tests.Selenium.PageTests
         protected SelenoHost Host;
         protected static IisExpressWebServer WebServer;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
             var app = new WebApplication(ProjectLocation.FromFolder(Constants.ApplicationNameForIISExpress), Config.Settings.PortNo);
@@ -21,7 +21,7 @@ namespace Umbraco.Tests.Selenium.PageTests
         }
 
 
-        [TearDown]
+        [OneTimeTearDown]
         public void TearDown()
         {
             Host.Dispose();

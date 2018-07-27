@@ -75,7 +75,6 @@
     <Compile Include="IConfig.cs" />
     <Compile Include="PageTests\Installer\InstallerTests.cs" />
     <Compile Include="PageTests\Installer\InstallPage.cs" />
-    <Compile Include="PageTests\SeleniumTestsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
