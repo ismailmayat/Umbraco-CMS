@@ -5,6 +5,7 @@ using Umbraco.Tests.Selenium.Helper;
 
 namespace Umbraco.Tests.Selenium.PageTests
 {
+    [SetUpFixture]
     public class SeleniumTestsBase
     {
         protected SelenoHost Host;
