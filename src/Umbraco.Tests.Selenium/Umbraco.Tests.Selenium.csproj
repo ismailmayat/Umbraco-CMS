@@ -55,6 +55,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="TestStack.Seleno, Version=0.9.61.0, Culture=neutral, processorArchitecture=MSIL">
@@ -70,13 +71,15 @@
   <ItemGroup>
     <Compile Include="Helper\Config.cs" />
     <Compile Include="Helper\Constants.cs" />
-    <Compile Include="Helper\IISExpressWebServer.cs" />
+    <Compile Include="IISExpressWebServer.cs" />
     <Compile Include="Helper\ObjectMother.cs" />
     <Compile Include="Host.cs" />
     <Compile Include="IConfig.cs" />
-    <Compile Include="PageTests\Installer\InstallerModel.cs" />
+    <Compile Include="PageTests\Installer\Models\InstallerModel.cs" />
     <Compile Include="PageTests\Installer\InstallerTests.cs" />
-    <Compile Include="PageTests\Installer\InstallPage.cs" />
+    <Compile Include="PageTests\Installer\Models\InstallPage.cs" />
+    <Compile Include="PageTests\Installer\Models\UmbracoBackOfficeContentPage.cs" />
+    <Compile Include="PageTests\SeleniumTestsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

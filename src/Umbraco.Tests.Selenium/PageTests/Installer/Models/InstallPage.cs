@@ -1,11 +1,11 @@
 ﻿using TestStack.Seleno.PageObjects;
 using TestStack.Seleno.PageObjects.Locators;
 
-namespace Umbraco.Tests.Selenium.PageTests.Installer
+namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
 {
     public class InstallPage : Page
     {
-        public InstallPage InstallUmbraco(InstallerModel installerModel)
+        public UmbracoBackOfficeContentPage InstallUmbraco(InstallerModel installerModel)
         {
             Find.Element(By.Name("name"))
                 .SendKeys(installerModel.Name);
@@ -16,7 +16,7 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer
             Find.Element(By.Name("password"))
                 .SendKeys(installerModel.Password);
 
-            return Navigate.To<InstallPage>(By.CssSelector("input[type='submit']"));
+            return Navigate.To<UmbracoBackOfficeContentPage>(By.CssSelector("input[type='submit']"));
         }
     }
 }

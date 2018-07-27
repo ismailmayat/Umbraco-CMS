@@ -3,7 +3,7 @@ using System.Diagnostics;
 using Holf.AllForOne;
 using TestStack.Seleno.Configuration.WebServers;
 
-namespace Umbraco.Tests.Selenium.Helper
+namespace Umbraco.Tests.Selenium
 {
     /// <summary>
     /// see http://www.michael-whelan.net/testing-mvc-application-with-iis-express-webdriver/

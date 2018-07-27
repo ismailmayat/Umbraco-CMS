@@ -1,4 +1,4 @@
-﻿namespace Umbraco.Tests.Selenium.PageTests.Installer
+﻿namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
 {
     public class InstallerModel
     {

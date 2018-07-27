@@ -1,4 +1,5 @@
 ﻿using Umbraco.Tests.Selenium.PageTests.Installer;
+using Umbraco.Tests.Selenium.PageTests.Installer.Models;
 
 namespace Umbraco.Tests.Selenium.Helper
 {
