@@ -1,14 +1,25 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 using TestStack.Seleno.Configuration;
-using TestStack.Seleno.PageObjects;
+using TestStack.Seleno.Configuration.WebServers;
+using Umbraco.Tests.Selenium.Helper;
 
 namespace Umbraco.Tests.Selenium.PageTests.Installer
 {
     [TestFixture]
-    public class InstallerTests {
+    public class InstallerTests
+    {
+        private SelenoHost _host;
+        public static IisExpressWebServer WebServer;
 
-        readonly SelenoHost _host = Host.Instance;
+        [SetUp]
+        public void SetUp()
+        {
+            var app = new WebApplication(ProjectLocation.FromFolder(Constants.ApplicationNameForIISExpress), Config.Settings.PortNo);
+            WebServer = new IisExpressWebServer(app);
+            WebServer.Start();
+            _host = Host.Instance;
+        }
 
         [Test]
         public void When_Navigating_To_Site_Root_Expect_Installer_Page()
@@ -19,10 +30,12 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer
             installPage.Title.Should().Contain("Install Umbraco");
         }
 
-    }
-
-    public class InstallPage : Page
-    {
+        [TearDown]
+        public void TearDown()
+        {
+            _host.Dispose();
+            WebServer.Stop();
+        }
 
     }
 }

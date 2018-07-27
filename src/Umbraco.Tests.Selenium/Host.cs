@@ -16,7 +16,7 @@ namespace Umbraco.Tests.Selenium
 
             var config = Config.Settings;
 
-            string siteInstanceUrl = config.LocalSiteUrl;
+            string siteInstanceUrl = config.LocalSiteUrl + ":" + Config.Settings.PortNo;
 
             Instance.Run(configure => configure
                 .WithWebServer(new InternetWebServer(siteInstanceUrl))

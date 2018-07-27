@@ -45,6 +45,9 @@
     <Reference Include="FluentAssertions, Version=5.4.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentAssertions.5.4.1\lib\net47\FluentAssertions.dll</HintPath>
     </Reference>
+    <Reference Include="Holf.AllForOne, Version=1.0.0.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AllForOne.1.0.0.27\lib\Holf.AllForOne.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
@@ -66,9 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper\Config.cs" />
+    <Compile Include="Helper\Constants.cs" />
+    <Compile Include="Helper\IISExpressWebServer.cs" />
     <Compile Include="Host.cs" />
     <Compile Include="IConfig.cs" />
     <Compile Include="PageTests\Installer\InstallerTests.cs" />
+    <Compile Include="PageTests\Installer\InstallPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
