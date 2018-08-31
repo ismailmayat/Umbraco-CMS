@@ -50,7 +50,9 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer
         {
             var installPage = Host.NavigateToInitialPage<InstallPage>();
 
-            var backOfficePage = installPage.InstallUmbraco(ObjectMother.CreateInstallerModel());
+            installPage.InstallUmbraco(ObjectMother.CreateInstallerModel());
+
+            var backOfficePage = Host.NavigateToInitialPage<UmbracoBackOfficeContentPage>();
 
             backOfficePage.Title.Should().Contain("Content");
 

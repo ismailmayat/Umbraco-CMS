@@ -5,7 +5,7 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
 {
     public class InstallPage : Page
     {
-        public UmbracoBackOfficeContentPage InstallUmbraco(InstallerModel installerModel)
+        public InstallPage InstallUmbraco(InstallerModel installerModel)
         {
             Find.Element(By.Name("name"))
                 .SendKeys(installerModel.Name);
@@ -18,7 +18,7 @@ namespace Umbraco.Tests.Selenium.PageTests.Installer.Models
 
             //todo after submitting the db etc is created but then a js redirect happens
             //we need to be able to tap into that to get the backoffice page atm we still have the install page
-            return Navigate.To<UmbracoBackOfficeContentPage>(By.CssSelector("input[type='submit']"));
+            return Navigate.To<InstallPage>(By.CssSelector("input[type='submit']"));
 
         }
     }
