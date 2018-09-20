@@ -577,7 +577,7 @@ namespace Umbraco.Web.Editors
         public ContentItemDisplay PostSaveBlueprint(
             [ModelBinder(typeof(ContentItemBinder))] ContentItemSave contentItem)
         {
-            var contentItemDisplay = PostSaveInternal(contentItem,
+            PostSaveInternal(contentItem,
                 content =>
                 {
                     EnsureUniqueName(content.Name, content, "Name");
@@ -586,9 +586,12 @@ namespace Umbraco.Web.Editors
                     //we need to reuse the underlying logic so return the result that it wants
                     return Attempt<OperationStatus>.Succeed(new OperationStatus(OperationStatusType.Success, new EventMessages()));
                 });
-            SetupBlueprint(contentItemDisplay, contentItemDisplay.PersistedContent);
 
-            return contentItemDisplay;
+            int contentId = int.Parse(contentItem.Id.ToString());
+
+            var savedItemToDisplay = GetBlueprintById(contentId);
+
+            return savedItemToDisplay;
         }
 
         /// <summary>
