@@ -171,36 +171,36 @@
         <key alias="currentType">حالیہ قسم</key>
         <key alias="docTypeCannotBeChanged">The document type cannot be changed, as there are no alternatives valid for this location.  An alternative will be valid if it is allowed under the parent of the selected content item and that all existing child content items are allowed to be created under it.</key>
         <key alias="docTypeChanged">دستاویز کی قسم تبدیل کر دیا گیا</key>
-        <key alias="mapProperties">Map Properties</key>
-        <key alias="mapToProperty">Map to Property</key>
-        <key alias="newTemplate">New Template</key>
-        <key alias="newType">New Type</key>
-        <key alias="none">none</key>
-        <key alias="selectedContent">Content</key>
-        <key alias="selectNewDocType">Select New Document Type</key>
+        <key alias="mapProperties">نقشہ خواص</key>
+        <key alias="mapToProperty">پراپرٹی کا نقشہ</key>
+        <key alias="newTemplate">نیا سانچہ</key>
+        <key alias="newType">نئی قسم</key>
+        <key alias="none">کچھ بھی نہیں</key>
+        <key alias="selectedContent">مواد</key>
+        <key alias="selectNewDocType">نئی دستاویز قسم منتخب کریں</key>
         <key alias="successMessage">The document type of the selected content has been successfully changed to [new type] and the following properties mapped:</key>
         <key alias="to">to</key>
         <key alias="validationErrorPropertyWithMoreThanOneMapping">Could not complete property mapping as one or more properties have more than one mapping defined.</key>
-        <key alias="validDocTypesNote">Only alternate types valid for the current location are displayed.</key>
+        <key alias="validDocTypesNote"><!-- Only alternate types valid for the current location are displayed. -->صرف متبادل اقسام کو حالیہ محل وقوع کے لیے جائز دکھائے جاتے ہیں ۔</key>
     </area>
     <area alias="content">
-        <key alias="isPublished" version="7.2">Is Published</key>
-        <key alias="about">About this page</key>
-        <key alias="alias">Alias</key>
-        <key alias="alternativeTextHelp">(how would you describe the picture over the phone)</key>
-        <key alias="alternativeUrls">Alternative Links</key>
-        <key alias="clickToEdit">Click to edit this item</key>
+        <key alias="isPublished" version="7.2">شائع ہوتا ہے</key>
+        <key alias="about">اس صفحہ کے بارے میں</key>
+        <key alias="alias">عرف</key>
+        <key alias="alternativeTextHelp"><!-- (how would you describe the picture over the phone) -->(کس طرح آپ تصویر فون پر وضاحت کریں گے)</key>
+        <key alias="alternativeUrls">متبادل لنکس</key>
+        <key alias="clickToEdit">اس شے کی تدوین کے لیے کلک کریں</key>
         <key alias="createBy">Created by</key>
-        <key alias="createByDesc" version="7.0">Original author</key>
-        <key alias="updatedBy" version="7.0">Updated by</key>
-        <key alias="createDate">Created</key>
-        <key alias="createDateDesc" version="7.0">Date/time this document was created</key>
-        <key alias="documentType">Document Type</key>
-        <key alias="editing">Editing</key>
-        <key alias="expireDate">Remove at</key>
-        <key alias="itemChanged">This item has been changed after publication</key>
-        <key alias="itemNotPublished">This item is not published</key>
-        <key alias="lastPublished">Last published</key>
+        <key alias="createByDesc" version="7.0">اصل مصنف</key>
+        <key alias="updatedBy" version="7.0">تازہ تریں</key>
+        <key alias="createDate">پیدا کیا</key>
+        <key alias="createDateDesc" version="7.0"><!-- Date/time this document was created -->تاریخ/وقت یہ دستاویز بنائی گئي</key>
+        <key alias="documentType">دستاویز قسم</key>
+        <key alias="editing">تدوین کاری</key>
+        <key alias="expireDate">پر ہٹائیں</key>
+        <key alias="itemChanged"><!-- This item has been changed after publication -->اس شے کی اشاعت کے بعد تبدیل کر دیا گیا ہے</key>
+        <key alias="itemNotPublished"><!-- This item is not published -->یہ شے شائع نہیں ہے</key>
+        <key alias="lastPublished">آخری شائع</key>
         <key alias="noItemsToShow">There are no items to show</key>
         <key alias="listViewNoItems" version="7.1.5">There are no items to show in the list.</key>
         <key alias="listViewNoContent">No content has been added</key>
